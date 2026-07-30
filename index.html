@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhura B | Portfolio - Computer Science Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Personal Portfolio of Madhura B - Computer Science Engineering Student, Full-Stack & AI Developer specializing in React, FastAPI, Python, PostgreSQL, and WebSockets.">
+  <meta name="keywords" content="Madhura B, Portfolio, Software Engineer, Full-Stack Developer, AI Agriculture, WebSockets, KrishiSetu, HangHive, Mysuru">
+  <meta name="author" content="Madhura B">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="logo-text">&lt;MB/&gt;</span>
+        <div class="loader-ring"></div>
+      </div>
+      <div class="loader-text">Loading Experience...</div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar-fill" id="loader-fill"></div>
+      </div>
+      <div class="loader-percentage" id="loader-counter">0%</div>
+    </div>
+  </div>
+
+  <!-- Dynamic Dynamic Mouse Follow Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Interactive Particle Network Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Madhura</span>
+        <span class="brand-surname">B</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> About</a>
+        <a href="#skills" class="nav-item"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#projects" class="nav-item"><i class="fa-solid fa-laptop-code"></i> Projects</a>
+        <a href="#milestones" class="nav-item"><i class="fa-solid fa-graduation-cap"></i> Milestones</a>
+        <a href="#credentials" class="nav-item"><i class="fa-solid fa-certificate"></i> Credentials</a>
+        <a href="#resume" class="nav-item"><i class="fa-solid fa-file-lines"></i> Resume</a>
+        <a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline nav-btn"><i class="fa-solid fa-comments"></i> Let's Talk</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-text-content">
+          <div class="status-badge fade-in">
+            <span class="status-pulse"></span> Available for Full-Stack & AI Roles
+          </div>
+
+          <h1 class="hero-title fade-in delay-1">
+            Hi, I'm <span class="gradient-text">Madhura B</span>
+          </h1>
+
+          <div class="hero-subtitle fade-in delay-2">
+            I am a <span class="typewriter" id="typewriter"></span><span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description fade-in delay-3">
+            Motivated Computer Science Engineering student passionate about crafting high-performance full-stack web applications, real-time communication platforms, and AI-powered solutions.
+          </p>
+
+          <div class="hero-cta-group fade-in delay-4">
+            <a href="#projects" class="btn btn-primary ripple">
+              <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#resume" class="btn btn-glass ripple">
+              <i class="fa-solid fa-download"></i> <span>Get Resume</span>
+            </a>
+            <a href="mailto:madhurabhaskar66@gmail.com" class="btn btn-icon-only ripple" title="Email Me">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials fade-in delay-5">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/madhurabhaskar66-spec" target="_blank" rel="noopener" class="social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/madhura-bhaskar-3288b2314" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:madhurabhaskar66@gmail.com" class="social-link" title="Email">
+              <i class="fa-solid fa-at"></i>
+            </a>
+            <a href="tel:+919379328989" class="social-link" title="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-content fade-in delay-3">
+          <div class="tilt-card-wrapper" id="hero-tilt-card">
+            <div class="code-window-card">
+              <div class="code-window-header">
+                <div class="window-buttons">
+                  <span class="btn-dot close"></span>
+                  <span class="btn-dot minimize"></span>
+                  <span class="btn-dot maximize"></span>
+                </div>
+                <div class="window-title"><i class="fa-brands fa-python"></i> madhura_profile.py</div>
+              </div>
+              <div class="code-window-body">
+                <pre><code><span class="code-keyword">class</span> <span class="code-class">SoftwareEngineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Madhura B"</span>
+        self.location = <span class="code-string">"Mysuru, India"</span>
+        self.education = <span class="code-string">"BE - CSE @ MIT Mysuru"</span>
+        self.status = <span class="code-string">"Top 10 Protothon Finalist"</span>
+        
+    <span class="code-keyword">def</span> <span class="code-func">get_tech_stack</span>(self):
+        <span class="code-keyword">return</span> {
+            <span class="code-string">"languages"</span>: [<span class="code-string">"Python"</span>, <span class="code-string">"C++"</span>, <span class="code-string">"SQL"</span>],
+            <span class="code-string">"frontend"</span>: [<span class="code-string">"React"</span>, <span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>],
+            <span class="code-string">"backend"</span>: [<span class="code-string">"FastAPI"</span>, <span class="code-string">"WebSockets"</span>, <span class="code-string">"JWT"</span>],
+            <span class="code-string">"database"</span>: [<span class="code-string">"PostgreSQL"</span>]
+        }
+        
+<span class="code-comment"># Ready to build revolutionary software!</span>
+dev = SoftwareEngineer()
+<span class="code-func">print</span>(f<span class="code-string">"🚀 {dev.name} is ready for impact!"</span>)</code></pre>
+              </div>
+            </div>
+
+            <!-- Floating Abstract Tech Elements -->
+            <div class="floating-tech-badge badge-1">
+              <i class="fa-brands fa-react"></i> React
+            </div>
+            <div class="floating-tech-badge badge-2">
+              <i class="fa-brands fa-python"></i> FastAPI
+            </div>
+            <div class="floating-tech-badge badge-3">
+              <i class="fa-solid fa-network-wired"></i> WebSockets
+            </div>
+            <div class="floating-tech-badge badge-4">
+              <i class="fa-solid fa-database"></i> PostgreSQL
+            </div>
+
+            <div class="hero-image-frame">
+              <img src="hero_graphic.png" alt="Madhura B Developer Illustration" class="hero-img">
+              <div class="glow-ring"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">// ABOUT ME</span>
+          <h2 class="section-title">Driven by Curiosity, Powered by Code</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-summary-card reveal-up">
+            <div class="card-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+            <h3>Career Summary</h3>
+            <p>
+              I am a motivated and detail-oriented <strong>Computer Science Engineering student</strong> at Maharaja Institute of Technology, Mysuru. Possessing a solid foundation in core computer science principles—including Data Structures & Algorithms, Object-Oriented Programming, and Computer Networks—I thrive on solving complex real-world challenges.
+            </p>
+            <p>
+              My expertise spans building <strong>full-stack platforms</strong> (React & FastAPI), designing <strong>real-time communication pipelines</strong> with WebSockets, and embedding <strong>AI recommendation modules</strong> for impactful domains like agriculture and enterprise communication.
+            </p>
+            <div class="highlight-pills">
+              <span class="pill"><i class="fa-solid fa-check-circle"></i> Problem Solver</span>
+              <span class="pill"><i class="fa-solid fa-check-circle"></i> Fast Learner</span>
+              <span class="pill"><i class="fa-solid fa-check-circle"></i> Full-Stack Creator</span>
+              <span class="pill"><i class="fa-solid fa-check-circle"></i> Hackathon Finalist</span>
+            </div>
+          </div>
+
+          <div class="about-side-cards">
+            <div class="about-card info-stat-card reveal-up delay-1">
+              <div class="stat-number">7.84</div>
+              <div class="stat-label">BE CSE CGPA (MIT Mysuru)</div>
+              <div class="stat-bar"><div class="stat-fill" style="width: 78.4%;"></div></div>
+            </div>
+
+            <div class="about-card info-stat-card reveal-up delay-2">
+              <div class="stat-number">89.5%</div>
+              <div class="stat-label">12th PUC Score (Marimallappa)</div>
+              <div class="stat-bar"><div class="stat-fill" style="width: 89.5%;"></div></div>
+            </div>
+
+            <div class="about-card info-stat-card reveal-up delay-3">
+              <div class="stat-number">Top 10</div>
+              <div class="stat-label">Protothon Hackathon Finalist (2026)</div>
+              <div class="stat-sub">National Tech Innovation Competition</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-padding alt-bg">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">// MY SKILLS</span>
+          <h2 class="section-title">Technical Proficiency & Tools</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="skills-filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="lang">Languages</button>
+          <button class="filter-btn" data-filter="web">Frontend & Web</button>
+          <button class="filter-btn" data-filter="backend">Backend & DB</button>
+          <button class="filter-btn" data-filter="core">Core CS & Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-card reveal-up" data-category="lang">
+            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-info">
+              <h4>Python</h4>
+              <span class="skill-category">Programming Language</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up delay-1" data-category="lang">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="skill-info">
+              <h4>C++</h4>
+              <span class="skill-category">Programming Language</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend & Web -->
+          <div class="skill-card reveal-up delay-2" data-category="web">
+            <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+            <div class="skill-info">
+              <h4>React</h4>
+              <span class="skill-category">Frontend Framework</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up delay-3" data-category="web">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-info">
+              <h4>HTML5 & CSS3</h4>
+              <span class="skill-category">Web Fundamentals</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend & Database -->
+          <div class="skill-card reveal-up" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="skill-info">
+              <h4>FastAPI</h4>
+              <span class="skill-category">Backend API Framework</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up delay-1" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="skill-info">
+              <h4>WebSockets</h4>
+              <span class="skill-category">Real-time Protocol</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up delay-2" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-info">
+              <h4>PostgreSQL & SQL</h4>
+              <span class="skill-category">Relational Database</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 84%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up delay-3" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="skill-info">
+              <h4>JWT Authentication</h4>
+              <span class="skill-category">Security & Authorization</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core CS & Tools -->
+          <div class="skill-card reveal-up" data-category="core">
+            <div class="skill-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <div class="skill-info">
+              <h4>DSA & OOP</h4>
+              <span class="skill-category">Core CS Concepts</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up delay-1" data-category="core">
+            <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <div class="skill-info">
+              <h4>Computer Networks</h4>
+              <span class="skill-category">Core Fundamentals</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up delay-2" data-category="core">
+            <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="skill-info">
+              <h4>Git & GitHub</h4>
+              <span class="skill-category">Version Control</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up delay-3" data-category="core">
+            <div class="skill-icon"><i class="fa-brands fa-aws"></i></div>
+            <div class="skill-info">
+              <h4>AWS Cloud</h4>
+              <span class="skill-category">Cloud Foundations</span>
+              <div class="skill-meter">
+                <div class="skill-meter-fill" style="width: 78%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">// FEATURED PROJECTS</span>
+          <h2 class="section-title">Architected & Developed</h2>
+          <div class="title-underline"></div>
+          <p class="section-desc">Innovative full-stack solutions solving real-world challenges in Agriculture & Real-time Communication.</p>
+        </div>
+
+        <div class="projects-showcase">
+          <!-- PROJECT 1: KrishiSetu -->
+          <div class="project-card tilt-card reveal-up" id="project-krishisetu">
+            <div class="project-glow"></div>
+            <div class="project-badge"><i class="fa-solid fa-seedling"></i> AI Agriculture</div>
+            
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">KrishiSetu</h3>
+                <span class="project-subtitle">AI-Powered Agriculture Marketplace</span>
+              </div>
+
+              <p class="project-description">
+                A full-stack agricultural marketplace platform connecting farmers directly with commercial vendors. Features advanced AI-based crop recommendation, yield prediction, real-time market insights, harvest discovery, and multilingual support for enhanced accessibility.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-item"><i class="fa-solid fa-robot"></i> AI Crop Recommendation & Yield Engine</div>
+                <div class="feature-item"><i class="fa-solid fa-store"></i> Digital Marketplace & Harvest Discovery</div>
+                <div class="feature-item"><i class="fa-solid fa-language"></i> Multilingual Support & Guidance Modules</div>
+                <div class="feature-item"><i class="fa-solid fa-lock"></i> Secure JWT Auth & PostgreSQL Database</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">JWT</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary ripple modal-trigger" data-modal="modal-krishisetu">
+                  <span>Explore Details</span> <i class="fa-solid fa-circle-info"></i>
+                </button>
+                <a href="https://github.com/madhurabhaskar66-spec" target="_blank" rel="noopener" class="btn btn-glass ripple">
+                  <i class="fa-brands fa-github"></i> <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: HangHive -->
+          <div class="project-card tilt-card reveal-up delay-2" id="project-hanghive">
+            <div class="project-glow"></div>
+            <div class="project-badge alt"><i class="fa-solid fa-comments"></i> Real-Time Platform</div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">HangHive</h3>
+                <span class="project-subtitle">Real-Time Communication Platform</span>
+              </div>
+
+              <p class="project-description">
+                A full-stack real-time messaging application with WebSocket integration for zero-latency communication. Supports group chats, private DMs, group voice/video calls, channel management, video posting, and role-based access control (RBAC).
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-item"><i class="fa-solid fa-bolt"></i> Low-Latency WebSockets & Messaging</div>
+                <div class="feature-item"><i class="fa-solid fa-video"></i> Group Voice & Video Calling Capabilities</div>
+                <div class="feature-item"><i class="fa-solid fa-shield-cat"></i> Role-Based Access Control (RBAC)</div>
+                <div class="feature-item"><i class="fa-solid fa-photo-film"></i> Public/Private Channels & Video Posts</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">WebSockets</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">JWT</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary ripple modal-trigger" data-modal="modal-hanghive">
+                  <span>Explore Details</span> <i class="fa-solid fa-circle-info"></i>
+                </button>
+                <a href="https://github.com/madhurabhaskar66-spec" target="_blank" rel="noopener" class="btn btn-glass ripple">
+                  <i class="fa-brands fa-github"></i> <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MILESTONES (EDUCATION & ACHIEVEMENTS) SECTION -->
+    <section id="milestones" class="section-padding alt-bg">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">// JOURNEY & MILESTONES</span>
+          <h2 class="section-title">Education & Achievements</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1: Hackathon -->
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot highlight"><i class="fa-solid fa-trophy"></i></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date"><i class="fa-solid fa-calendar"></i> 2026</span>
+              <span class="timeline-tag achievement-tag"><i class="fa-solid fa-star"></i> Top 10 Finalist</span>
+              <h3 class="timeline-title">Protothon Hackathon (2026)</h3>
+              <p class="timeline-desc">
+                Recognized among the Top 10 Finalists nationwide for designing and pitching innovative tech solutions addressing complex problem statements under tight time constraints.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: BE CSE -->
+          <div class="timeline-item reveal-right delay-1">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date"><i class="fa-solid fa-building-columns"></i> Present</span>
+              <span class="timeline-tag edu-tag">Undergraduate Degree</span>
+              <h3 class="timeline-title">BE in Computer Science & Engineering</h3>
+              <div class="timeline-institution">Maharaja Institution of Technology, Mysuru</div>
+              <div class="timeline-score"><i class="fa-solid fa-award"></i> CGPA: <strong>7.84</strong></div>
+              <p class="timeline-desc">
+                Focusing on Core Computer Science principles: Data Structures & Algorithms, Object-Oriented Design, Relational Database Management Systems, Computer Networks, and Full-Stack Engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: GDG Solution Challenge -->
+          <div class="timeline-item reveal-left delay-2">
+            <div class="timeline-dot highlight"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date"><i class="fa-solid fa-flag"></i> Hackathon & Community</span>
+              <span class="timeline-tag achievement-tag">National Challenge</span>
+              <h3 class="timeline-title">GDG on Campus Solution Challenge India</h3>
+              <p class="timeline-desc">
+                Participated in Google Developer Groups (GDG) Solution Challenge India, building community-driven applications aligned with UN Sustainable Development Goals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: 12th PUC -->
+          <div class="timeline-item reveal-right delay-3">
+            <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date"><i class="fa-solid fa-calendar-check"></i> High School Completion</span>
+              <span class="timeline-tag edu-tag">Senior Secondary</span>
+              <h3 class="timeline-title">12th Grade (PUC)</h3>
+              <div class="timeline-institution">Marimallappa PU College, Mysuru</div>
+              <div class="timeline-score"><i class="fa-solid fa-award"></i> Score: <strong>89.5%</strong></div>
+              <p class="timeline-desc">
+                Completed secondary education with high distinction, focusing on Mathematics, Physics, Chemistry, and Computer Fundamentals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & VIRTUAL SIMULATIONS SECTION -->
+    <section id="credentials" class="section-padding">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">// CERTIFICATIONS & SIMULATIONS</span>
+          <h2 class="section-title">Verified Credentials</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="credentials-grid">
+          <!-- AWS -->
+          <div class="credential-card reveal-up">
+            <div class="credential-badge-icon aws"><i class="fa-brands fa-aws"></i></div>
+            <div class="credential-body">
+              <span class="issuer">Coursera / Amazon Web Services</span>
+              <h4>Cloud Practitioner Essentials (AWS)</h4>
+              <p>Foundational knowledge of AWS cloud services, security concepts, architecture principles, and pricing models.</p>
+              <div class="verify-chip"><i class="fa-solid fa-shield-check"></i> Verified Course</div>
+            </div>
+          </div>
+
+          <!-- IBM React -->
+          <div class="credential-card reveal-up delay-1">
+            <div class="credential-badge-icon ibm"><i class="fa-brands fa-react"></i></div>
+            <div class="credential-body">
+              <span class="issuer">Coursera / IBM</span>
+              <h4>Developing Front-End Apps with React</h4>
+              <p>Hands-on development of dynamic user interfaces, state management, hooks, components, and async API integration.</p>
+              <div class="verify-chip"><i class="fa-solid fa-shield-check"></i> Verified Course</div>
+            </div>
+          </div>
+
+          <!-- Meta Version Control -->
+          <div class="credential-card reveal-up delay-2">
+            <div class="credential-badge-icon meta"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="credential-body">
+              <span class="issuer">Coursera / Meta</span>
+              <h4>Version Control</h4>
+              <p>Professional Git workflows, branching strategies, merge conflict resolution, and collaborative repository management.</p>
+              <div class="verify-chip"><i class="fa-solid fa-shield-check"></i> Verified Course</div>
+            </div>
+          </div>
+
+          <!-- Deloitte & EA Simulations -->
+          <div class="credential-card reveal-up delay-3">
+            <div class="credential-badge-icon industry"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="credential-body">
+              <span class="issuer">Job Simulations</span>
+              <h4>Deloitte & Electronic Arts (EA)</h4>
+              <p>Practical virtual experience simulations tackling real-world corporate technology tasks and software engineering problems.</p>
+              <div class="verify-chip"><i class="fa-solid fa-shield-check"></i> Virtual Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume" class="section-padding alt-bg">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">// CURRICULUM VITAE</span>
+          <h2 class="section-title">Resume Overview & Download</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="resume-card-box reveal-up">
+          <div class="resume-left">
+            <div class="resume-avatar-circle">
+              <span>MB</span>
+            </div>
+            <h3>Madhura B</h3>
+            <p class="resume-role">Computer Science Engineering Student</p>
+            <div class="resume-quick-details">
+              <span><i class="fa-solid fa-location-dot"></i> Mysuru, India</span>
+              <span><i class="fa-solid fa-phone"></i> +91 9379328989</span>
+              <span><i class="fa-solid fa-envelope"></i> madhurabhaskar66@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="resume-right">
+            <h4>Snapshot Highlights</h4>
+            <ul class="resume-bullets">
+              <li><strong>Core Tech:</strong> Python, C++, React, FastAPI, WebSockets, PostgreSQL, SQL, JWT</li>
+              <li><strong>Featured Systems:</strong> KrishiSetu (AI Agriculture Hub) & HangHive (Real-Time Communication Platform)</li>
+              <li><strong>Education:</strong> BE CSE @ MIT Mysuru (CGPA: 7.84) | 12th PUC (89.5%)</li>
+              <li><strong>Achievements:</strong> Top 10 Protothon Hackathon Finalist, GDG Solution Challenge</li>
+              <li><strong>Certifications:</strong> AWS Cloud Practitioner Essentials, IBM React Dev, Meta Version Control</li>
+            </ul>
+
+            <div class="resume-actions-row">
+              <button class="btn btn-primary ripple" id="download-resume-btn">
+                <i class="fa-solid fa-download"></i> <span>Download Printable Resume</span>
+              </button>
+              <button class="btn btn-glass ripple" id="view-resume-modal-btn">
+                <i class="fa-solid fa-eye"></i> <span>Interactive Full Resume</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">// GET IN TOUCH</span>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <div class="title-underline"></div>
+          <p class="section-desc">Open for software engineering opportunities, internships, hackathon collaborations, and tech discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-col reveal-left">
+            <div class="contact-card copy-trigger" data-copy="madhurabhaskar66@gmail.com">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Email Me</span>
+                <span class="contact-value">madhurabhaskar66@gmail.com</span>
+              </div>
+              <span class="copy-badge" title="Click to copy"><i class="fa-regular fa-copy"></i></span>
+            </div>
+
+            <div class="contact-card copy-trigger" data-copy="+919379328989">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Call / WhatsApp</span>
+                <span class="contact-value">+91 9379328989</span>
+              </div>
+              <span class="copy-badge" title="Click to copy"><i class="fa-regular fa-copy"></i></span>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Mysuru, Karnataka, India</span>
+              </div>
+            </div>
+
+            <div class="contact-social-box">
+              <h4>Follow & Connect</h4>
+              <div class="social-icons">
+                <a href="https://github.com/madhurabhaskar66-spec" target="_blank" rel="noopener" class="social-btn" title="GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/madhura-bhaskar-3288b2314" target="_blank" rel="noopener" class="social-btn" title="LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:madhurabhaskar66@gmail.com" class="social-btn" title="Send Direct Email">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-col reveal-right">
+            <form class="contact-form glass-card" id="portfolio-contact-form">
+              <h3>Send Me a Message</h3>
+
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input type="text" id="form-name" placeholder="John Doe" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input type="email" id="form-email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="form-subject" placeholder="Project Opportunity / Recruiter Inquiry" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="form-message" rows="4" placeholder="Hello Madhura, I would like to discuss..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block ripple">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div class="form-response" id="form-response"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="brand-bracket">&lt;</span>Madhura B<span class="brand-bracket">/&gt;</span>
+        </a>
+        <p>Crafting intelligent, full-stack digital experiences with passion & precision.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#milestones">Milestones</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Madhura B. Built with vanilla HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top Floating Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- PROJECT MODAL: KRISHISETU -->
+  <div class="modal-overlay" id="modal-krishisetu">
+    <div class="modal-container glass-card">
+      <button class="modal-close" data-close="modal-krishisetu">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge"><i class="fa-solid fa-seedling"></i> AI Agriculture Marketplace</div>
+        <h2>KrishiSetu – AI Powered Agriculture Marketplace</h2>
+        <div class="modal-tech-row">
+          <span>React</span><span>FastAPI</span><span>Python</span><span>PostgreSQL</span><span>JWT</span>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3><i class="fa-solid fa-rocket"></i> Overview</h3>
+          <p>
+            KrishiSetu is an end-to-end digital platform engineered to bridge the gap between rural farmers and commercial vendors. It replaces traditional middlemen with a transparent, AI-driven marketplace that provides real-time pricing, crop analytics, and farming guidance.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3><i class="fa-solid fa-gears"></i> Key Modules & Architecture</h3>
+          <div class="modal-grid-2">
+            <div class="modal-info-box">
+              <h4><i class="fa-solid fa-brain"></i> AI Crop & Yield Engine</h4>
+              <p>Predictive modules analyzing soil parameters, weather data, and seasonal trends to recommend high-yield crops and optimal harvesting schedules.</p>
+            </div>
+
+            <div class="modal-info-box">
+              <h4><i class="fa-solid fa-cart-shopping"></i> Harvest Discovery & Marketplace</h4>
+              <p>Empowers farmers to create verified crop harvest listings with pictures, pricing, and quantities for direct vendor bidding.</p>
+            </div>
+
+            <div class="modal-info-box">
+              <h4><i class="fa-solid fa-language"></i> Multilingual Support</h4>
+              <p>Accessibility-first interface supporting local regional languages so non-tech-savvy farmers can navigate effortless crop guidance.</p>
+            </div>
+
+            <div class="modal-info-box">
+              <h4><i class="fa-solid fa-shield-halved"></i> Secure JWT Auth & DB</h4>
+              <p>Role-based JWT authentication separating farmer and vendor portals, with PostgreSQL managing user sessions and transaction logs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/madhurabhaskar66-spec" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> View GitHub Repository
+        </a>
+        <button class="btn btn-glass" data-close="modal-krishisetu">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT MODAL: HANGHIVE -->
+  <div class="modal-overlay" id="modal-hanghive">
+    <div class="modal-container glass-card">
+      <button class="modal-close" data-close="modal-hanghive">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge alt"><i class="fa-solid fa-comments"></i> Real-Time Platform</div>
+        <h2>HangHive – Real Time Communication Platform</h2>
+        <div class="modal-tech-row">
+          <span>React</span><span>FastAPI</span><span>Python</span><span>PostgreSQL</span><span>JWT</span><span>WebSockets</span>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3><i class="fa-solid fa-rocket"></i> Overview</h3>
+          <p>
+            HangHive is a high-performance full-stack communication platform supporting instant messaging, group channels, media posting, and real-time audio/video streaming. Built with WebSockets and FastAPI, it achieves sub-100ms messaging latencies across distributed client instances.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3><i class="fa-solid fa-gears"></i> Core Capabilities</h3>
+          <div class="modal-grid-2">
+            <div class="modal-info-box">
+              <h4><i class="fa-solid fa-bolt"></i> Real-Time Messaging & WebSockets</h4>
+              <p>Bi-directional WebSocket connection pipeline delivering instant text messaging, typing indicators, read receipts, and online status.</p>
+            </div>
+
+            <div class="modal-info-box">
+              <h4><i class="fa-solid fa-video"></i> Voice & Video Call Streaming</h4>
+              <p>Group voice and video calling infrastructure enabling multi-party live conferencing with mute, camera toggle, and screen share controls.</p>
+            </div>
+
+            <div class="modal-info-box">
+              <h4><i class="fa-solid fa-users"></i> Channels & Video Feeds</h4>
+              <p>Creation of public and private channels, media attachments, video post feeds, and persistent chat history backed by PostgreSQL.</p>
+            </div>
+
+            <div class="modal-info-box">
+              <h4><i class="fa-solid fa-user-shield"></i> Role-Based Access Control</h4>
+              <p>Strict admin/moderator/member permissions powered by JWT authorization for secure channel and server management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/madhurabhaskar66-spec" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> View GitHub Repository
+        </a>
+        <button class="btn btn-glass" data-close="modal-hanghive">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE RESUME PREVIEW MODAL -->
+  <div class="modal-overlay" id="modal-resume">
+    <div class="modal-container glass-card large-modal">
+      <button class="modal-close" data-close="modal-resume">&times;</button>
+      <div class="modal-header">
+        <h2>MADHURA B - Curriculum Vitae</h2>
+        <p class="modal-subtitle">Mysuru, India | +91 9379328989 | madhurabhaskar66@gmail.com</p>
+      </div>
+
+      <div class="modal-body printable-resume" id="printable-resume-area">
+        <div class="resume-doc-header">
+          <h1>MADHURA B</h1>
+          <p class="resume-contact-line">
+            📞 +91 9379328989 &nbsp;|&nbsp; ✉️ madhurabhaskar66@gmail.com &nbsp;|&nbsp; 📍 Mysuru, India<br>
+            🔗 LinkedIn: linkedin.com/in/madhura-bhaskar-3288b2314 &nbsp;|&nbsp; 💻 GitHub: github.com/madhurabhaskar66-spec
+          </p>
+        </div>
+
+        <div class="resume-doc-section">
+          <h3>CAREER SUMMARY</h3>
+          <p>Motivated and detail-oriented Computer Science Engineering student with a strong foundation in core computer science concepts and a passion for problem-solving and continuous learning.</p>
+        </div>
+
+        <div class="resume-doc-section">
+          <h3>SKILLS</h3>
+          <ul>
+            <li><strong>Programming Languages:</strong> Python, C++</li>
+            <li><strong>Frontend:</strong> HTML, CSS, React</li>
+            <li><strong>Database:</strong> SQL, PostgreSQL</li>
+            <li><strong>Core Computer Science:</strong> DSA(Basics), OOP, Computer Networks</li>
+            <li><strong>Tools & Technologies:</strong> Git, GitHub, VS Code, FastAPI, WebSockets, JWT, AWS</li>
+          </ul>
+        </div>
+
+        <div class="resume-doc-section">
+          <h3>PROJECTS</h3>
+          <div class="resume-doc-item">
+            <h4>KrishiSetu – AI Powered Agriculture Marketplace</h4>
+            <div class="tech-sub">Tech Stack: React, FastAPI, Python, PostgreSQL, JWT</div>
+            <p>Built a platform connecting farmers and vendors through a digital marketplace with secure authentication and communication features. Developed AI-based crop recommendation, yield prediction, market insights, and seasonal farming guidance modules. Implemented harvest listing, crop discovery, and multilingual support to enhance accessibility and decision-making.</p>
+          </div>
+
+          <div class="resume-doc-item">
+            <h4>HangHive – Real Time Communication Platform</h4>
+            <div class="tech-sub">Tech Stack: React, FastAPI, Python, PostgreSQL, JWT, WebSockets</div>
+            <p>Built a full-stack real-time messaging platform supporting group chats and private messaging. Implemented WebSocket-based communication enabling real-time message delivery and also group voice and video call. Designed role-based access control and secure authentication using JWT. Integrated features such as public and private channel creation, video posting and message history. Created responsive UI for seamless user experience across devices.</p>
+          </div>
+        </div>
+
+        <div class="resume-doc-section">
+          <h3>EDUCATION</h3>
+          <ul>
+            <li><strong>BE - CSE:</strong> Maharaja Institution of Technology, Mysuru — CGPA: 7.84</li>
+            <li><strong>12th (PUC):</strong> Marimallappa PU college, Mysuru — Score: 89.5%</li>
+          </ul>
+        </div>
+
+        <div class="resume-doc-section">
+          <h3>ACHIEVEMENTS</h3>
+          <ul>
+            <li>Top 10 Finalist - Protothon hackathon (2026)</li>
+            <li>Participated in GDG on Campus Solution Challenge India</li>
+          </ul>
+        </div>
+
+        <div class="resume-doc-section">
+          <h3>CERTIFICATIONS</h3>
+          <ul>
+            <li>Coursera - Cloud Practitioner Essentials (AWS)</li>
+            <li>Coursera - Developing Front-End Apps with React (IBM)</li>
+            <li>Coursera - Version Control (Meta)</li>
+            <li>Job Simulations – Deloitte and Electronic Arts</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="window.print()">
+          <i class="fa-solid fa-print"></i> Print / Save as PDF
+        </button>
+        <button class="btn btn-glass" data-close="modal-resume">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
